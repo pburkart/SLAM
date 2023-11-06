@@ -33,6 +33,18 @@ Public Class Form1
             CheckForUpdate()
         End If
 
+        Dim cs2 As New SourceGame
+        cs2.name = "Counter-Strike: Global Offensive"
+        cs2.id = 730
+        cs2.directory = "common\Counter-Strike Global Offensive\"
+        cs2.ToCfg = "game\csgo\cfg\"
+        cs2.libraryname = "csgo\"
+        cs2.exename = "cs2"
+        cs2.samplerate = 22050
+        cs2.blacklist.AddRange({"attack", "attack2", "autobuy", "back", "buy", "buyammo1", "buyammo2", "buymenu", "callvote", "cancelselect", "cheer", "compliment", "coverme", "drop", "duck", "enemydown", "enemyspot", "fallback", "followme", "forward", "getout", "go", "holdpos", "inposition", "invnext", "invprev", "jump", "lastinv", "messagemode", "messagemode2", "moveleft", "moveright", "mute", "negative", "quit", "radio1", "radio2", "radio3", "rebuy", "regroup", "reload", "report", "reportingin", "roger", "sectorclear", "showscores", "slot1", "slot10", "slot2", "slot3", "slot4", "slot5", "slot6", "slot7", "slot8", "slot9", "speed", "sticktog", "takepoint", "takingfire", "teammenu", "thanks", "toggleconsole", "use", "voicerecord"})
+        cs2.VoiceFadeOut = False
+        Games.Add(cs2)
+        
         Dim csgo As New SourceGame
         csgo.name = "Counter-Strike: Global Offensive"
         csgo.id = 730
